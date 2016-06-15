@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-06-15T15:41:24Z" product-name="lvdb">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="img.description">
+				<source>img</source>
+			</trans-unit>
+			<trans-unit id="data.description">
+				<source>data</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

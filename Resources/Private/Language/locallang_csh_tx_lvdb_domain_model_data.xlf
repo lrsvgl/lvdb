@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-06-15T15:41:24Z" product-name="lvdb">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="text1.description">
+				<source>text1</source>
+			</trans-unit>
+			<trans-unit id="img1.description">
+				<source>img1</source>
+			</trans-unit>
+			<trans-unit id="text2.description">
+				<source>text2</source>
+			</trans-unit>
+			<trans-unit id="img2.description">
+				<source>img2</source>
+			</trans-unit>
+			<trans-unit id="text3.description">
+				<source>text3</source>
+			</trans-unit>
+			<trans-unit id="textacc1.description">
+				<source>textacc1</source>
+			</trans-unit>
+			<trans-unit id="textacc2.description">
+				<source>textacc2</source>
+			</trans-unit>
+			<trans-unit id="textacc3.description">
+				<source>textacc3</source>
+			</trans-unit>
+			<trans-unit id="adresse.description">
+				<source>adresse</source>
+			</trans-unit>
+			<trans-unit id="plz.description">
+				<source>plz</source>
+			</trans-unit>
+			<trans-unit id="ort.description">
+				<source>ort</source>
+			</trans-unit>
+			<trans-unit id="land.description">
+				<source>land</source>
+			</trans-unit>
+			<trans-unit id="telefon.description">
+				<source>telefon</source>
+			</trans-unit>
+			<trans-unit id="fax.description">
+				<source>fax</source>
+			</trans-unit>
+			<trans-unit id="email.description">
+				<source>email</source>
+			</trans-unit>
+			<trans-unit id="sliderbilder.description">
+				<source>sliderbilder</source>
+			</trans-unit>
+			<trans-unit id="lat.description">
+				<source>lat</source>
+			</trans-unit>
+			<trans-unit id="lon.description">
+				<source>lon</source>
+			</trans-unit>
+			<trans-unit id="geocode.description">
+				<source>geocode</source>
+			</trans-unit>
+			<trans-unit id="newsuid.description">
+				<source>newsuid</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

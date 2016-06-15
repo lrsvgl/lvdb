@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-06-15T15:41:24Z" product-name="lvdb">
+		<header/>
+		<body>
+			<trans-unit id="tx_lvdb_domain_model_data">
+				<source>Data</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.text1">
+				<source>Text1</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.img1">
+				<source>Img1</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.text2">
+				<source>Text2</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.img2">
+				<source>Img2</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.text3">
+				<source>Text3</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.textacc1">
+				<source>Textacc1</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.textacc2">
+				<source>Textacc2</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.textacc3">
+				<source>Textacc3</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.adresse">
+				<source>Adresse</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.plz">
+				<source>Plz</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.ort">
+				<source>Ort</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.land">
+				<source>Land</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.telefon">
+				<source>Telefon</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.fax">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.sliderbilder">
+				<source>Sliderbilder</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.lat">
+				<source>Lat</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.lon">
+				<source>Lon</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.geocode">
+				<source>Geocode</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.newsuid">
+				<source>Newsuid</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_category.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_category.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_category.img">
+				<source>Img</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_category.data">
+				<source>Data</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

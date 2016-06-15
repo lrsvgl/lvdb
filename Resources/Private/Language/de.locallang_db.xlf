@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file target-language="de" datatype="plaintext" original="messages" date="2016-04-21T17:26:23Z" product-name="lvdb">
+		<header/>
+		<body>
+			<trans-unit id="tx_lvdb_domain_model_data">
+				<target>Kib-Daten</target>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.title">
+				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.text1">
+				<target>Kurzbeschreibung</target>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.img1">
+				<target>Bild: Kurzbeschreibung</target>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.text2">
+				<target>Wie wir arbeiten</target>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.img2">
+				<target>Bild: Wie wir arbeiten</target>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.textacc1">
+				<target>Plätze und Öffnungszeiten</target>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.textacc2">
+				<target>Anmeldung und Beiträge</target>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.textacc3">
+				<target>Wegweiser und Kontakt</target>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_category">
+				<target>Kategorie</target>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_category.title">
+				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_category.description">
+				<target>Beschreibung</target>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_category.data">
+				<target>Kib Daten</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

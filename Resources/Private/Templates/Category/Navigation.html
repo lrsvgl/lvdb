@@ -1,0 +1,38 @@
+<f:layout name="Default"/>
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+Resources:
+Private:
+Templates:
+List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+    <f:flashMessages/>
+    <f:debug>{settings}</f:debug>
+
+            <ul class="lvl-2 dropdown-menu lvdb" role="menu">
+            <f:for each="{categories}" as="category">
+                <li id="catUid-{category.uid}" class="inactive">
+                    <f:link.action pageUid="{settings.dataPid}" controller="Category" action="show" arguments="{category : category}"> {category.title}</f:link.action>
+                    <f:if condition="{category.data}">
+                            <ul class="lvl2">
+                                <f:for each="{category.data}" as="data">
+                                    <li>
+                                        <f:link.action pageUid="{settings.dataPid}" controller="Data" action="show" arguments="{data : data}"> {data.title}</f:link.action>
+                                    </li>
+                                </f:for>
+                            </ul>
+
+                    </f:if>
+
+                </li>
+
+            </f:for>
+
+</f:section>
