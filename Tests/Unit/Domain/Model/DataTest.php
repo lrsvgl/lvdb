@@ -572,4 +572,18 @@ class DataTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     public function setNewsuidForIntSetsNewsuid()
     {
     }
+
+    /**
+     * @test
+     */
+    public function getTermineuidReturnsInitialValueForInt()
+    {
+    }
+
+    /**
+     * @test
+     */
+    public function setTermineuidForIntSetsTermineuid()
+    {
+    }
 }

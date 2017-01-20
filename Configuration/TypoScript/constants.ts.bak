@@ -21,6 +21,8 @@ plugin.tx_lvdb_datenbank {
     debug =
     # cat=plugin.tx_lvdb_datenbank//a; type=string; label=Slider Data-Interval
     dataInterval = 4500
+    # cat=plugin.tx_lvdb_datenbank//a; type=string; label=Google Maps Api
+    googleApiLink = http://maps.google.com/maps/api/js?v=3.9
   }
 }
 

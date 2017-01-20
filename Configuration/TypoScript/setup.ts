@@ -16,6 +16,7 @@ plugin.tx_lvdb_datenbank {
     categoryPid = {$plugin.tx_lvdb_datenbank.settings.categoryPid}
     debug = {$plugin.tx_lvdb_datenbank.settings.debug}
     dataInterval = {$plugin.tx_lvdb_datenbank.settings.dataInterval}
+    googleApiLink = {$plugin.tx_lvdb_datenbank.settings.googleApiLink}
   }
 }
 

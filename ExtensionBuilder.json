@@ -244,6 +244,16 @@
                             "propertyName": "newsuid",
                             "propertyType": "Integer",
                             "uid": "352781152501"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "termineuid",
+                            "propertyType": "Integer",
+                            "uid": "501946832857"
                         }
                     ]
                 },
@@ -394,7 +404,7 @@
         }
     ],
     "log": {
-        "last_modified": "2016-06-15 03:41",
+        "last_modified": "2016-09-19 09:17",
         "extension_builder_version": "7.6.0",
         "be_user": "Lars Vogel (2)"
     }

@@ -27,6 +27,7 @@ CREATE TABLE tx_lvdb_domain_model_data (
 	lon double(11,6) DEFAULT '0.00' NOT NULL,
 	geocode int(11) DEFAULT '0' NOT NULL,
 	newsuid int(11) DEFAULT '0' NOT NULL,
+	termineuid int(11) DEFAULT '0' NOT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,

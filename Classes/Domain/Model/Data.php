@@ -33,14 +33,6 @@ class Data extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
 
     /**
-     * sliderbilder
-     *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
-     * @lazy
-     */
-    protected $sliderbilder = null;
-    
-    /**
      * title
      *
      * @var string
@@ -153,6 +145,14 @@ class Data extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $email = '';
     
     /**
+     * sliderbilder
+     *
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
+     * @lazy
+     */
+    protected $sliderbilder = null;
+    
+    /**
      * lat
      *
      * @var float
@@ -179,7 +179,13 @@ class Data extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var int
      */
     protected $newsuid = 0;
-
+    
+    /**
+     * termineuid
+     *
+     * @var int
+     */
+    protected $termineuid = 0;
     
     /**
      * __construct
@@ -630,6 +636,27 @@ class Data extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setSliderbilder(\TYPO3\CMS\Extbase\Domain\Model\FileReference $sliderbilder)
     {
         $this->sliderbilder = $sliderbilder;
+    }
+    
+    /**
+     * Returns the termineuid
+     *
+     * @return int $termineuid
+     */
+    public function getTermineuid()
+    {
+        return $this->termineuid;
+    }
+    
+    /**
+     * Sets the termineuid
+     *
+     * @param int $termineuid
+     * @return void
+     */
+    public function setTermineuid($termineuid)
+    {
+        $this->termineuid = $termineuid;
     }
 
 }

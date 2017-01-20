@@ -39,9 +39,10 @@ call_user_func(
     },
     $_EXTKEY
 );
+// ext_localconf.php
 if (!is_array($TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['lvdb_cache'])) {
-    $TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['lvdb_cache'] = array();
-    $TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['lvdb_cache']['frontend'] = 'TYPO3\\CMS\\Core\\Cache\\Frontend\\VariableFrontend';
-    $TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['lvdb_cache']['backend'] = 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend';
-    $TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['lvdb_cache']['options']['compression'] = 1;
+	$TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['lvdb_cache'] = array();
+	$TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['lvdb_cache']['frontend'] = 'TYPO3\\CMS\\Core\\Cache\\Frontend\\VariableFrontend';
+	$TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['lvdb_cache']['backend'] = 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend';
+	$TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['lvdb_cache']['options']['compression'] = 1;
 }

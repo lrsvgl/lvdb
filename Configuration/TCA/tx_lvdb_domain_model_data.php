@@ -19,14 +19,14 @@ return [
 			'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'title,text1,img1,text2,img2,text3,textacc1,textacc2,textacc3,adresse,plz,ort,land,telefon,fax,email,sliderbilder,lat,lon,geocode,newsuid,',
+        'searchFields' => 'title,text1,img1,text2,img2,text3,textacc1,textacc2,textacc3,adresse,plz,ort,land,telefon,fax,email,sliderbilder,lat,lon,geocode,newsuid,termineuid,',
         'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('lvdb') . 'Resources/Public/Icons/tx_lvdb_domain_model_data.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, text1, img1, text2, img2, text3, textacc1, textacc2, textacc3, adresse, plz, ort, land, telefon, fax, email, sliderbilder, lat, lon, geocode, newsuid',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, text1, img1, text2, img2, text3, textacc1, textacc2, textacc3, adresse, plz, ort, land, telefon, fax, email, sliderbilder, lat, lon, geocode, newsuid, termineuid',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, text1;;;richtext:rte_transform[mode=ts_links], img1, text2;;;richtext:rte_transform[mode=ts_links], img2, text3;;;richtext:rte_transform[mode=ts_links], textacc1;;;richtext:rte_transform[mode=ts_links], textacc2;;;richtext:rte_transform[mode=ts_links], textacc3;;;richtext:rte_transform[mode=ts_links], adresse, plz, ort, land, telefon, fax, email, sliderbilder, lat, lon, geocode, newsuid, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, text1;;;richtext:rte_transform[mode=ts_links], img1, text2;;;richtext:rte_transform[mode=ts_links], img2, text3;;;richtext:rte_transform[mode=ts_links], textacc1;;;richtext:rte_transform[mode=ts_links], textacc2;;;richtext:rte_transform[mode=ts_links], textacc3;;;richtext:rte_transform[mode=ts_links], adresse, plz, ort, land, telefon, fax, email, sliderbilder, lat, lon, geocode, newsuid, termineuid, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'palettes' => [
         '1' => ['showitem' => ''],
@@ -354,51 +354,51 @@ return [
 	        
 	    ],
 	    'sliderbilder' => [
-	        'exclude' => 1,
-	        'label' => 'LLL:EXT:lvdb/Resources/Private/Language/locallang_db.xlf:tx_lvdb_domain_model_data.sliderbilder',
-	        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
+		    'exclude' => 1,
+		    'label' => 'LLL:EXT:lvdb/Resources/Private/Language/locallang_db.xlf:tx_lvdb_domain_model_data.sliderbilder',
+		    'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
 			    'sliderbilder',
 			    [
-			        'appearance' => [
-			            'createNewRelationLinkTitle' => 'LLL:EXT:cms/locallang_ttc.xlf:images.addFileReference'
-			        ],
-			        'foreign_types' => [
-			            '0' => [
-			                'showitem' => '
+				    'appearance' => [
+					    'createNewRelationLinkTitle' => 'LLL:EXT:cms/locallang_ttc.xlf:images.addFileReference'
+				    ],
+				    'foreign_types' => [
+					    '0' => [
+						    'showitem' => '
 			                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
 			                --palette--;;filePalette'
-			            ],
-			            \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
-			                'showitem' => '
+					    ],
+					    \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
+						    'showitem' => '
 			                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
 			                --palette--;;filePalette'
-			            ],
-			            \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
-			                'showitem' => '
+					    ],
+					    \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
+						    'showitem' => '
 			                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
 			                --palette--;;filePalette'
-			            ],
-			            \TYPO3\CMS\Core\Resource\File::FILETYPE_AUDIO => [
-			                'showitem' => '
+					    ],
+					    \TYPO3\CMS\Core\Resource\File::FILETYPE_AUDIO => [
+						    'showitem' => '
 			                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
 			                --palette--;;filePalette'
-			            ],
-			            \TYPO3\CMS\Core\Resource\File::FILETYPE_VIDEO => [
-			                'showitem' => '
+					    ],
+					    \TYPO3\CMS\Core\Resource\File::FILETYPE_VIDEO => [
+						    'showitem' => '
 			                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
 			                --palette--;;filePalette'
-			            ],
-			            \TYPO3\CMS\Core\Resource\File::FILETYPE_APPLICATION => [
-			                'showitem' => '
+					    ],
+					    \TYPO3\CMS\Core\Resource\File::FILETYPE_APPLICATION => [
+						    'showitem' => '
 			                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
 			                --palette--;;filePalette'
-			            ]
-			        ],
-			        'maxitems' => 99
+					    ]
+				    ],
+				    'maxitems' => 99
 			    ],
 			    $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
-			),
-	        
+		    ),
+
 	    ],
 	    'lat' => [
 	        'exclude' => 1,
@@ -431,14 +431,28 @@ return [
 	        
 	    ],
 	    'newsuid' => [
+		    'exclude' => 0,
+		    'label' => 'LLL:EXT:lvdb/Resources/Private/Language/locallang_db.xlf:tx_lvdb_domain_model_data.newsuid',
+		    'config' => [
+			    'type'     => 'select',
+			    'foreign_table' => 'tt_content',
+			    'foreign_table_where' => 'AND tt_content.CType = "list" AND tt_content.list_type = "news_pi1" ',
+			    'eval'     => 'int',
+			    'checkbox' => '0',
+			    'default' => 0
+		    ]
+	    ],
+	    'termineuid' => [
 	        'exclude' => 1,
-	        'label' => 'LLL:EXT:lvdb/Resources/Private/Language/locallang_db.xlf:tx_lvdb_domain_model_data.newsuid',
-	        'config' => [
-			    'type' => 'input',
-			    'size' => 4,
-			    'eval' => 'int'
-			]
-	        
+	        'label' => 'LLL:EXT:lvdb/Resources/Private/Language/locallang_db.xlf:tx_lvdb_domain_model_data.termineuid',
+		    'config' => [
+			    'type'     => 'select',
+			    'foreign_table' => 'tt_content',
+			    'foreign_table_where' => 'AND tt_content.CType = "list" AND tt_content.list_type = "news_pi1" ',
+			    'eval'     => 'int',
+			    'checkbox' => '0',
+			    'default' => 0
+		    ]
 	    ],
         
     ],
