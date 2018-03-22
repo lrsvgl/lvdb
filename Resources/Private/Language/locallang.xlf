@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2016-09-19T09:17:09Z" product-name="lvdb">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-02-22T07:59:18Z" product-name="lvdb">
 		<header/>
 		<body>
 			<trans-unit id="tx_lvdb_domain_model_data">
@@ -23,6 +23,9 @@
 			</trans-unit>
 			<trans-unit id="tx_lvdb_domain_model_data.text3">
 				<source>Text3</source>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.img3">
+				<source>Img3x</source>
 			</trans-unit>
 			<trans-unit id="tx_lvdb_domain_model_data.textacc1">
 				<source>Textacc1</source>

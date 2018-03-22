@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2016-09-19T09:17:09Z" product-name="lvdb">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-02-22T07:59:18Z" product-name="lvdb">
 		<header/>
 		<body>
 			<trans-unit id="title.description">
@@ -20,6 +20,9 @@
 			</trans-unit>
 			<trans-unit id="text3.description">
 				<source>text3</source>
+			</trans-unit>
+			<trans-unit id="img3.description">
+				<source>img3</source>
 			</trans-unit>
 			<trans-unit id="textacc1.description">
 				<source>textacc1</source>

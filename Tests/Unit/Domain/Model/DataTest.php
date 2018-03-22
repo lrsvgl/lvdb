@@ -192,6 +192,34 @@ class DataTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
+    public function getImg3ReturnsInitialValueForFileReference()
+    {
+        $this->assertEquals(
+            NULL,
+            $this->subject->getImg3()
+        );
+
+    }
+
+    /**
+     * @test
+     */
+    public function setImg3ForFileReferenceSetsImg3()
+    {
+        $fileReferenceFixture = new \TYPO3\CMS\Extbase\Domain\Model\FileReference();
+        $this->subject->setImg3($fileReferenceFixture);
+
+        $this->assertAttributeEquals(
+            $fileReferenceFixture,
+            'img3',
+            $this->subject
+        );
+
+    }
+
+    /**
+     * @test
+     */
     public function getTextacc1ReturnsInitialValueForString()
     {
         $this->assertSame(

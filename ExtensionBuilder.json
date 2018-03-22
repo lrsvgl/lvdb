@@ -101,6 +101,16 @@
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": false,
+                            "propertyName": "img3",
+                            "propertyType": "Image",
+                            "uid": "24916014966"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
                             "propertyName": "textacc1",
                             "propertyType": "RichText",
                             "uid": "1303192036531"
@@ -404,7 +414,7 @@
         }
     ],
     "log": {
-        "last_modified": "2016-09-19 09:17",
+        "last_modified": "2018-02-22 07:59",
         "extension_builder_version": "7.6.0",
         "be_user": "Lars Vogel (2)"
     }

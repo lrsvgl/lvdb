@@ -12,6 +12,7 @@ CREATE TABLE tx_lvdb_domain_model_data (
 	text2 text NOT NULL,
 	img2 int(11) unsigned NOT NULL default '0',
 	text3 text NOT NULL,
+	img3 int(11) unsigned NOT NULL default '0',
 	textacc1 text NOT NULL,
 	textacc2 text NOT NULL,
 	textacc3 text NOT NULL,

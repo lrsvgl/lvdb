@@ -19,14 +19,14 @@ return [
 			'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'title,text1,img1,text2,img2,text3,textacc1,textacc2,textacc3,adresse,plz,ort,land,telefon,fax,email,sliderbilder,lat,lon,geocode,newsuid,termineuid,',
+        'searchFields' => 'title,text1,img1,text2,img2,text3,img3,textacc1,textacc2,textacc3,adresse,plz,ort,land,telefon,fax,email,sliderbilder,lat,lon,geocode,newsuid,termineuid,',
         'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('lvdb') . 'Resources/Public/Icons/tx_lvdb_domain_model_data.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, text1, img1, text2, img2, text3, textacc1, textacc2, textacc3, adresse, plz, ort, land, telefon, fax, email, sliderbilder, lat, lon, geocode, newsuid, termineuid',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, text1, img1, text2, img2, text3, img3, textacc1, textacc2, textacc3, adresse, plz, ort, land, telefon, fax, email, sliderbilder, lat, lon, geocode, newsuid, termineuid',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, text1;;;richtext:rte_transform[mode=ts_links], img1, text2;;;richtext:rte_transform[mode=ts_links], img2, text3;;;richtext:rte_transform[mode=ts_links], textacc1;;;richtext:rte_transform[mode=ts_links], textacc2;;;richtext:rte_transform[mode=ts_links], textacc3;;;richtext:rte_transform[mode=ts_links], adresse, plz, ort, land, telefon, fax, email, sliderbilder, lat, lon, geocode, newsuid, termineuid, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, text1;;;richtext:rte_transform[mode=ts_links], img1, text2;;;richtext:rte_transform[mode=ts_links], img2, text3;;;richtext:rte_transform[mode=ts_links], img3, textacc1;;;richtext:rte_transform[mode=ts_links], textacc2;;;richtext:rte_transform[mode=ts_links], textacc3;;;richtext:rte_transform[mode=ts_links], adresse, plz, ort, land, telefon, fax, email, sliderbilder, lat, lon, geocode, newsuid, termineuid, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'palettes' => [
         '1' => ['showitem' => ''],
@@ -249,6 +249,53 @@ return [
 			    'eval' => 'trim',
 			],
 	        'defaultExtras' => 'rte[]'
+	    ],
+	    'img3' => [
+	        'exclude' => 1,
+	        'label' => 'LLL:EXT:lvdb/Resources/Private/Language/locallang_db.xlf:tx_lvdb_domain_model_data.img3',
+	        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
+			    'img3',
+			    [
+			        'appearance' => [
+			            'createNewRelationLinkTitle' => 'LLL:EXT:cms/locallang_ttc.xlf:images.addFileReference'
+			        ],
+			        'foreign_types' => [
+			            '0' => [
+			                'showitem' => '
+			                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+			                --palette--;;filePalette'
+			            ],
+			            \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
+			                'showitem' => '
+			                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+			                --palette--;;filePalette'
+			            ],
+			            \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
+			                'showitem' => '
+			                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+			                --palette--;;filePalette'
+			            ],
+			            \TYPO3\CMS\Core\Resource\File::FILETYPE_AUDIO => [
+			                'showitem' => '
+			                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+			                --palette--;;filePalette'
+			            ],
+			            \TYPO3\CMS\Core\Resource\File::FILETYPE_VIDEO => [
+			                'showitem' => '
+			                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+			                --palette--;;filePalette'
+			            ],
+			            \TYPO3\CMS\Core\Resource\File::FILETYPE_APPLICATION => [
+			                'showitem' => '
+			                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+			                --palette--;;filePalette'
+			            ]
+			        ],
+			        'maxitems' => 1
+			    ],
+			    $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
+			),
+
 	    ],
 	    'textacc1' => [
 	        'exclude' => 1,

@@ -73,7 +73,14 @@ class Data extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var string
      */
     protected $text3 = '';
-    
+
+	/**
+	 * img3
+	 *
+	 * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
+	 */
+	protected $img3 = null;
+
     /**
      * textacc1
      *
@@ -322,6 +329,27 @@ class Data extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->text3 = $text3;
     }
+
+	/**
+	 * Returns the img3
+	 *
+	 * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference $img3
+	 */
+	public function getImg3()
+	{
+		return $this->img3;
+	}
+
+	/**
+	 * Sets the img3
+	 *
+	 * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $img3
+	 * @return void
+	 */
+	public function setImg3(\TYPO3\CMS\Extbase\Domain\Model\FileReference $img3)
+	{
+		$this->img3 = $img3;
+	}
     
     /**
      * Returns the textacc1
@@ -658,5 +686,7 @@ class Data extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->termineuid = $termineuid;
     }
+
+
 
 }

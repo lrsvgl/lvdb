@@ -21,6 +21,13 @@
 			<trans-unit id="tx_lvdb_domain_model_data.img2">
 				<target>Bild: Wie wir arbeiten</target>
 			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.text3">
+				<target>Text 3</target>
+			</trans-unit>
+			<trans-unit id="tx_lvdb_domain_model_data.img3">
+				<target>Bild 3</target>
+			</trans-unit>
+
 			<trans-unit id="tx_lvdb_domain_model_data.textacc1">
 				<target>Plätze und Öffnungszeiten</target>
 			</trans-unit>

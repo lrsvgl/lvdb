@@ -28,7 +28,7 @@ Datenbank
 		comma,separated,list,of,keywords
 
 	:Copyright:
-		2016
+		2018
 
 	:Author:
 

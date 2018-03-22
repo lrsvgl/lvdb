@@ -100,31 +100,5 @@ array (
 
     ],
 
-
-	'newsuid' => [
-		'exclude' => 0,
-		'label' => 'LLL:EXT:lvdb/Resources/Private/Language/locallang_db.xlf:tx_lvdb_domain_model_data.newsuid',
-		'config' => [
-			'type'     => 'select',
-			'foreign_table' => 'tt_content',
-			'foreign_table_where' => 'AND tt_content.CType = "list" AND tt_content.list_type = "news_pi1" ',
-			'eval'     => 'int',
-			'checkbox' => '0',
-			'default' => 0
-		]
-	],
-	'termineuid' => [
-		'exclude' => 1,
-		'label' => 'LLL:EXT:lvdb/Resources/Private/Language/locallang_db.xlf:tx_lvdb_domain_model_data.termineuid',
-		'config' => [
-			'type'     => 'select',
-			'foreign_table' => 'tt_content',
-			'foreign_table_where' => 'AND tt_content.CType = "list" AND tt_content.list_type = "news_pi1" ',
-			'eval'     => 'int',
-			'checkbox' => '0',
-			'default' => 0
-		]
-	],
-
 );
 
